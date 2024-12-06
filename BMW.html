@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMW Car Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        p {
+            /* General Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hero {
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.car-models {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.car-models h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.models-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.model {
+    width: 250px;
+    text-align: center;
+}
+
+.model img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.model h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+.about-us {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-us form button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-us form button:hover {
+    background-color: #444;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+    </style>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW_logo.svg/512px-BMW_logo.svg.png" alt="BMW Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#models">Car Models</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to the BMW Showroom</h1>
+            <p>Your journey to luxury begins here.</p>
+        </div>
+    </section>
+
+    <!-- Car Models Section -->
+    <section id="models" class="car-models">
+        <h2>Explore Our BMW Models</h2>
+        <div class="models-gallery">
+            <div class="model">
+                <img src="https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/Images/all-models/BMW%20Series/bmw-2-series/890x500-magnified_03.jpg/jcr:content/renditions/cq5dam.resized.img.890.medium.time1650606654446.jpg" alt="BMW 2 Series">
+                <h3>BMW 2 Series</h3>
+            </div>
+            <div class="model">
+                <img src="https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/all-models/3-series/gl/2023/bmw_3gl_exterior_design.jpg/jcr:content/renditions/cq5dam.resized.img.890.medium.time1673256832103.jpg" alt="BMW 3 Series">
+                <h3>BMW 3 Series</h3>
+            </div>
+            <div class="model">
+                <img src="https://www.bmw.in/content/dam/bmw/common/all-models/x-series/series-overview/bmw-x-series-seo-overview-ms-x5-05.jpg/jcr:content/renditions/cq5dam.resized.img.585.low.time1674175613466.jpg" alt="BMW X5">
+                <h3>BMW X5</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>At our BMW Showroom, we bring the elegance, performance, and technology of BMW vehicles closer to you. Whether you're in the market for a luxury sedan or a sporty SUV, we have something for every driver.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to schedule a test drive, feel free to reach out!</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 BMW Showroom | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
